@@ -37,14 +37,14 @@ jobs:
       - name: Checkout GH repository
         uses: actions/checkout@master
 
-      - name: Compile repo
+      - name: Compile repository
         run: make
 
       - name: Check binary existence
         run: |
-        if [ ! -f ./swapupcase ] ; then
-          echo "Binary not found"
-          exit 1
-        fi
-        echo "Binary found"
-        exit 0
+            if [ ! -f ./swapupcase ]; then
+              echo "Binary not found"
+              exit 1
+            fi
+              echo "Binary found"
+              exit 0
