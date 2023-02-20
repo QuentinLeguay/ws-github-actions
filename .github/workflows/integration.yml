@@ -16,7 +16,7 @@ jobs:
         run: /tmp/coding-style.sh . .
 
       - name: display cod report
-        run: cat coding-style-report.log
+        run: cat coding-style-reports.log
 
       - name: report cod result
         run: |
