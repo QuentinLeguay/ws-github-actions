@@ -14,13 +14,13 @@ int trim_numbers(char *str, bool is_string_odd)
     if (str == NULL)
         return ERROR;
 
-    int size = my_strlen(str);
-    if (size == ERROR)
+    int size=my_strlen(str);
+    if (size==ERROR)
         return ERROR;
     if (is_string_odd)
         --size;
 
-    for (int i = 0; i < size; i++)
+    for (int i=0; i<size; i++)
         if (str[i] >= '0' && str[i] <= '9')
             str[i] = 'a' + (str[i] - '0');
 
