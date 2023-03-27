@@ -1,5 +1,6 @@
 name: continous_integration
 on: push
+if: github.branch
 jobs:
 
   coding-style:
